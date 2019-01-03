@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>UniKL Multimedia Section</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- icons -->
+		<link rel="unikl-logo" href="item\unikl.png">
+		<link rel="shortcut icon" href="item\unikl.png">
+
+		<!-- Override CSS file - add your own CSS rules -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header-heading">
+		
+			<!-- UniKL Logo -->
+				<img class="img-responsive" src="item\headernew.png" alt="" >
+			</div>
+			
+			<!-- Navigation bar -->
+			<div class="topnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="announcement.html">Announcement</a>
+                <a href="programme.html">Programme</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <div class="search-container">
+                  <form action="Errorpage.html">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+              </div>
+
+
+
+			<div class="content">
+				<div class="main">
+				
+				<!-- Slideshow -->
+					<div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="item\slide1.jpg" style="width:100%">
+                <div class="text">UniKL MIIT</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="item\slide2.jpg" style="width:100%">
+                <div class="text">Students</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="item\slide3.jpg" style="width:100%">
+                <div class="text">Students</div>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              </div>
+              <br>
+
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+				
+			<!-- Script for Slide animation function -->
+
+             <script>
+             var slideIndex = 1;
+             showSlides(slideIndex);
+
+             function plusSlides(n) {
+               showSlides(slideIndex += n);
+              }
+
+              function currentSlide(n) {
+              showSlides(slideIndex = n);
+              }
+
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                       slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+              }
+              </script>
+					
+
+					<hr>
+					
+				<!-- Accordian / Open-Close Bar -->
+				
+                <button class="accordion">New</button>
+                <div class="panel">
+				&nbsp;
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+             </div>
+			 
+             <button class="accordion">Latest Activity</button>
+             <div class="panel">
+			  &nbsp;
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </div>
+		   
+             <!-- Spacebar -->		   
+		   	  &nbsp; 
+
+		     <h3>
+			 Quick Access
+			 </h3>
+
+			 <!-- Quick Access -->		   
+
+			   <div class="row">
+             <div class="column">
+             <a href="https://www.facebook.com/UniKLOfficialPage/"><img src="item\uniklfacebook.png" alt="Facebook" style="width:100%">
+             </div>
+             <div class="column">
+             <a href="gallery.html"><img src="item\uniklgallery.png" alt="gallery" style="width:100%">
+             </div>
+             <div class="column">
+             <a href="contact.html"><img src="item\uniklchatbox.png" alt="chatbox" style="width:100%">
+             </div>			 
+		    </div>
+
+			
+	         </div>
+			
+		   </div>
+		   
+		     <!-- Footer -->		   
+
+			<div class="footer">
+				<p>
+				<a href="https://www.facebook.com/UniKLOfficialPage/"><img src="item\facebook.png" alt="facebook" height="90" width="90"></a>
+                <a href="https://www.instagram.com/uniklofficial"><img src="item\insta.png"  alt="instagram" height="90" width="90"></a>
+                <a href="http://www.unikl.edu.my"><img src="item\test.png" alt="uniklportal" height="83" width="85"></a>
+				</p>
+			&copy; Copyright 2017 . All Rights Reserved. Coded by Hisyam
+
+			</div>
+			
+		
+		
+			<!-- Script for button accordion animation function -->
+
+     		<script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+    
+            for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+                   } 
+                }
+             }
+              </script>
+
+	</body>
+</html>

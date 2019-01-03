@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>UniKL Multimedia Section</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- icons -->
+		<link rel="unikl-logo" href="item\unikl.png">
+		<link rel="shortcut icon" href="item\unikl.png">
+
+		<!-- Override CSS file - add your own CSS rules -->
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header-heading">
+			
+			<!-- UniKL Logo -->
+				<img class="img-responsive" src="item\header.png" alt="">
+			</div>
+			
+			<!-- Navigation bar -->
+			<div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="announcement.html">Announcement</a>
+                <a class="active" href="programme.html">Programme</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <div class="search-container">
+                  <form action="Errorpage.html">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+              </div>
+
+
+
+			<div class="content">
+				<div class="main">
+				
+			  <!-- Spacebar -->		   
+		   	  &nbsp; 
+
+		     <h3>
+			 Programme / Courses
+			 </h3>
+			
+			
+					
+				<!-- Accordian / Open-Close Bar -->
+				
+                <button class="accordion">Diploma</button>
+                <div class="panel">
+				&nbsp;
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+             </div>
+			 
+             <button class="accordion">Degree</button>
+             <div class="panel">
+			  &nbsp;
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </div>
+		   
+		   
+		       <!-- Spacebar -->		   
+		   	  &nbsp; 
+
+		   
+		     <!-- Togglable Tabs + Close Tabs -->
+		     <div class="tab">
+               <button class="tablinks" onclick="openCity(event, 'Content')" id="defaultOpen">Content</button>
+               <button class="tablinks" onclick="openCity(event, 'Career')">Career</button>
+               <button class="tablinks" onclick="openCity(event, 'Financing')">Financing</button>
+             </div>
+
+             <div id="Content" class="tabcontent">
+               <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+			   &nbsp; 
+               <h3>Content</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+             </div>
+
+             <div id="Career" class="tabcontent">
+               <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+		   	  &nbsp; 			   
+               <h3>Career</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+             </div>
+
+             <div id="Financing" class="tabcontent">
+               <span onclick="this.parentElement.style.display='none'" class="topright">x</span>
+		   	  &nbsp; 
+               <h3>Financing</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+             </div>
+			 
+             <!-- Javascript for Togglable tab + close Tabs-->
+
+             <script>
+             function openCity(evt, cityName) {
+                 var i, tabcontent, tablinks;
+                 tabcontent = document.getElementsByClassName("tabcontent");
+                 for (i = 0; i < tabcontent.length; i++) {
+                     tabcontent[i].style.display = "none";
+                 }
+                 tablinks = document.getElementsByClassName("tablinks");
+                 for (i = 0; i < tablinks.length; i++) {
+                     tablinks[i].className = tablinks[i].className.replace(" active", "");
+                 }
+                 document.getElementById(cityName).style.display = "block";
+                 evt.currentTarget.className += " active";
+             }
+
+             // Get the element with id="defaultOpen" and click on it
+             document.getElementById("defaultOpen").click();
+             </script>
+		   
+             <!-- Spacebar -->		   
+		   	  &nbsp; 
+
+		     <h3>
+			 Quick Access
+			 </h3>
+
+			 <!-- Quick Access -->		   
+
+			   <div class="row">
+             <div class="column">
+             <a href="https://www.facebook.com/UniKLOfficialPage/"><img src="item\uniklfacebook.png" alt="Facebook" style="width:100%">
+             </div>
+             <div class="column">
+             <a href="gallery.html"><img src="item\uniklgallery.png" alt="gallery" style="width:100%">
+             </div>
+             <div class="column">
+             <a href="contact.html"><img src="item\uniklchatbox.png" alt="chatbox" style="width:100%">
+             </div>			 
+		    </div>
+
+			
+	         </div>
+			
+		   </div>
+		   
+		     <!-- Footer -->		   
+
+			<div class="footer">
+				<p>
+				<a href="https://www.facebook.com/UniKLOfficialPage/"><img src="item\facebook.png" alt="facebook" height="90" width="90"></a>
+                <a href="https://www.instagram.com/uniklofficial"><img src="item\insta.png"  alt="instagram" height="90" width="90"></a>
+                <a href="http://www.unikl.edu.my"><img src="item\test.png" alt="uniklportal" height="83" width="85"></a>
+				</p>
+			&copy; Copyright 2017 . All Rights Reserved. Coded by Hisyam
+
+			</div>
+			
+		
+		
+			<!-- Script for button accordion animation function -->
+
+     		<script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+    
+            for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+                   } 
+                }
+             }
+              </script>
+
+	</body>
+</html>
